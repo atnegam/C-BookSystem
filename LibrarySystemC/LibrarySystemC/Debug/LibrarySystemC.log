@@ -1,0 +1,11 @@
+﻿生成启动时间为 2019/2/26 11:11:48。
+     1>项目“C:\Users\-_-\Desktop\coding\LibrarySystemC+\LibrarySystemC\LibrarySystemC\LibrarySystemC.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt LibrarySystem.cpp
+         LibrarySystem.cpp
+     1>c:\users\-_-\desktop\coding\librarysystemc+\librarysystemc\librarysystemc\librarysystem.cpp(413): error C2181: 没有匹配 if 的非法 else
+     1>已完成生成项目“C:\Users\-_-\Desktop\coding\LibrarySystemC+\LibrarySystemC\LibrarySystemC\LibrarySystemC.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.15

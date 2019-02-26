@@ -25,7 +25,10 @@ void Book::ShowBook(){
 		while (pshow->next != NULL)
 		{
 			pshow = pshow->next;
-			cout << pshow->book_name << endl;
+			cout << "\t----------------------------------------------------------------------------"<<endl;
+			cout << "\t编号" << "\t" << "书名" << "\t" << "作者" << "\t" << "出版社" <<"\t"<<"库存"<< endl;
+			cout << "\t----------------------------------------------------------------------------" << endl;
+			cout <<"\t"<<pshow->book_number<<"\t"<< pshow->book_name<<"\t" <<pshow->book_author<< "\t"<<pshow->book_concern<<"\t"<<pshow->book_surplus<<endl;
 		}
 	}
 }
@@ -38,9 +41,9 @@ void Book::AddBook(){
 	}
 	Nbook* pnew = new Nbook;
 	pnew->next = NULL;
-	cout << "请录入书编号：";
 	getchar();
-	getline(cin,pnew->book_name);
+	cout << "请录入书编号：";
+	getline(cin,pnew->book_number);
 	cout << "请录入书名：";
 	getline(cin, pnew->book_name);
 	cout << "请录入作者名：";
@@ -88,7 +91,11 @@ void Book::SeacheBook(){
 	}
 	if (pserch->next != NULL)
 	{
-		cout << "已找到书籍！" << s << endl;
+		cout << "已找到书籍！"<< endl;
+		cout << "\t----------------------------------------------------------------------------" << endl;
+		cout << "\t编号" << "\t" << "书名" << "\t" << "作者" << "\t" << "出版社" << "\t" << "库存" << endl;
+		cout << "\t----------------------------------------------------------------------------" << endl;
+		cout << "\t" << pserch->next->book_number<< "\t" << pserch->next->book_name << "\t" << pserch->next->book_author << "\t" << pserch->next->book_concern << "\t" << pserch->next->book_surplus << endl;
 	}
 	else
 	{
