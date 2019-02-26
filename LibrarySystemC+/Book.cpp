@@ -17,6 +17,9 @@ void Book::CreateNode(){
 }
 
 void Book::ShowBook(){
+	cout << "\t----------------------------------------------------------------------------" << endl;
+	cout << "\t编号" << "\t" << "书名" << "\t" << "作者" << "\t" << "出版社" << "\t" << "库存" << endl;
+	cout << "\t----------------------------------------------------------------------------" << endl;
 	if (head->next == NULL){
 		cout << "暂无书籍信息" << endl;
 	}
@@ -25,9 +28,7 @@ void Book::ShowBook(){
 		while (pshow->next != NULL)
 		{
 			pshow = pshow->next;
-			cout << "\t----------------------------------------------------------------------------"<<endl;
-			cout << "\t编号" << "\t" << "书名" << "\t" << "作者" << "\t" << "出版社" <<"\t"<<"库存"<< endl;
-			cout << "\t----------------------------------------------------------------------------" << endl;
+
 			cout <<"\t"<<pshow->book_number<<"\t"<< pshow->book_name<<"\t" <<pshow->book_author<< "\t"<<pshow->book_concern<<"\t"<<pshow->book_surplus<<endl;
 		}
 	}
@@ -84,6 +85,9 @@ void Book::SeacheBook(){
 	string s;
 	cout << "请输入要搜索的图书名" << endl;
 	getline(cin,s);
+	cout << "\t----------------------------------------------------------------------------" << endl;
+	cout << "\t编号" << "\t" << "书名" << "\t" << "作者" << "\t" << "出版社" << "\t" << "库存" << endl;
+	cout << "\t----------------------------------------------------------------------------" << endl;
 	Nbook* pserch = head;
 	while (pserch->next != NULL && pserch->next->book_name != s)//&&判断顺序为先左
 	{
@@ -91,10 +95,6 @@ void Book::SeacheBook(){
 	}
 	if (pserch->next != NULL)
 	{
-		cout << "已找到书籍！"<< endl;
-		cout << "\t----------------------------------------------------------------------------" << endl;
-		cout << "\t编号" << "\t" << "书名" << "\t" << "作者" << "\t" << "出版社" << "\t" << "库存" << endl;
-		cout << "\t----------------------------------------------------------------------------" << endl;
 		cout << "\t" << pserch->next->book_number<< "\t" << pserch->next->book_name << "\t" << pserch->next->book_author << "\t" << pserch->next->book_concern << "\t" << pserch->next->book_surplus << endl;
 	}
 	else
