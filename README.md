@@ -3,6 +3,7 @@
 分为：
   C版本---DevC++打开
   C++版本-----VS打开
+  blog:https://www.cnblogs.com/yhonker/p/10285643.html
 ```
 代码简单，界面可以直接改。
 效果图：
