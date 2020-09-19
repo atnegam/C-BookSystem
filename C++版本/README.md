@@ -1,2 +1,1 @@
-# LibrarySystemC
-This is a library management system written in C++.
+C++版本 请用VS打开构建
