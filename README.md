@@ -4,3 +4,6 @@
   C版本---DevC++打开
   C++版本-----VS打开
 ```
+代码简单，界面可以直接改。
+效果图：
+![avatar](https://github.com/yhonker/C-BookSystem/blob/master/capture/c1.png)
