@@ -8,6 +8,5 @@
 代码简单，界面可以直接改。
 效果图：
 
-\
 
 ![c1](https://github.com/yhonker/C-BookSystem/blob/master/capture/c1.png)
